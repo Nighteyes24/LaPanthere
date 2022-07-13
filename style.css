@@ -799,6 +799,9 @@ h4 {
 /* media queries*/
 
 @media (max-width: 1024px) {
+  .b-parallax {
+    background-attachment: scroll;
+  }
   .bloc {
     padding-left: 20px;
     padding-right: 20px;
@@ -812,12 +815,6 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .b-parallax {
-    background-attachment: scroll;
-  }
-}
-
 @media (max-width: 992px) and (min-width: 768px) {
   .navbar .nav {
     max-width: 80%;
@@ -825,13 +822,11 @@ h4 {
   .nav-center.navbar .nav {
     max-width: 100%;
   }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
+
 @media (max-width: 991px) {
   .container {
     width: 100%;
