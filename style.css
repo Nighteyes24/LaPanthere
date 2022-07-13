@@ -44,6 +44,16 @@ a:hover {
     padding-right: 0;
 }
 
+.keyword {
+    color:#cccccc;
+    font-size:14px;
+}
+.text-center{
+    font-size: 14px;
+}
+.tc-white{
+    font-size: 14px;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -325,7 +335,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
