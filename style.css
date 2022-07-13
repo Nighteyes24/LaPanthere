@@ -18,6 +18,30 @@ a:hover {
     cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
+}
+
+p {
+    font-size: 12px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -649,24 +673,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-
-.container {
-    max-width: 1000px;
-}
 
 .hero-bloc-text {
     font-size: 38px;
@@ -686,9 +692,6 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -732,11 +735,7 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
-
-h4 {
+h1, h4 {
     color: #333333!important;
 }
 
@@ -835,6 +834,9 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+/* media queries*/
+
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -846,6 +848,12 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
     }
 }
 
@@ -863,13 +871,6 @@ h4 {
         background-attachment: scroll;
     }
 }
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -897,9 +898,14 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-}
+  }
 
-@media (max-width: 767px) {
+  @media (max-width: 767px) {
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+  }
+  @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1036,17 +1042,16 @@ h4 {
         width: 180px;
         height: 320px;
     }
-}
-
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
-}
+  }  
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
-}
+
+
+
+
+
